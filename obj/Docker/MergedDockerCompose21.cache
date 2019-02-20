@@ -1,0 +1,33 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  contosouniversity:
+    build:
+      args:
+        source: obj/Docker/empty/
+      context: C:\Users\tahir.hassan\Downloads\ASP.NET MVC Application Using Entity
+        Framework Code First\C#\ContosoUniversity
+      dockerfile: Dockerfile
+    entrypoint: cmd /c "start /B C:\\ServiceMonitor.exe w3svc & C:\\remote_debugger\\x64\\msvsmon.exe
+      /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn
+      /nowowwarn /timeout:2147483646"
+    image: contosouniversity:dev
+    ports:
+    - 80/tcp
+    - 1433:1433/tcp
+    volumes:
+    - C:\Users\tahir.hassan\Downloads\ASP.NET MVC Application Using Entity Framework
+      Code First\C#\ContosoUniversity:C:\inetpub\wwwroot:rw
+    - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Remote
+      Debugger:C:\remote_debugger:ro
+  mssql:
+    container_name: mssql-express
+    environment:
+      ACCEPT_EULA: "Y"
+      sa_password: tahir12#
+    image: microsoft/mssql-server-windows-express
+    ports:
+    - 1433:1433/tcp
+version: '3.0'

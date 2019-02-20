@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  contosouniversity:
+    image: contosouniversity
+    container_name: contosouniversity
+    build:
+      context: .\ContosoUniversity
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+
+  mssql:
+    image: microsoft/mssql-server-windows-express
+    container_name: mssql-express
+    environment:
+      - sa_password=tahir12#
+      - ACCEPT_EULA=Y
+    ports:
+      - 1433:1433

@@ -1,0 +1,1 @@
+C:\Users\tahir.hassan\Downloads\ASP.NET MVC Application Using Entity Framework Code First\C#\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

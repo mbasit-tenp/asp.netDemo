@@ -1,0 +1,23 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  contosouniversity:
+    build:
+      context: C:\Users\tahir.hassan\Downloads\ASP.NET MVC Application Using Entity
+        Framework Code First\C#\ContosoUniversity
+      dockerfile: Dockerfile
+    image: contosouniversity
+    ports:
+    - 80/tcp
+    - 80:1992/tcp
+  mssql:
+    container_name: mssql-express
+    environment:
+      ACCEPT_EULA: "Y"
+      sa_password: tahir12#
+    image: microsoft/mssql-server-windows-express
+    ports:
+    - 1433:1433/tcp
+version: '3.0'
