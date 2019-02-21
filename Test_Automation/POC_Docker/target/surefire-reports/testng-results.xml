@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tests.TestAbout" duration-ms="17647" started-at="2019-02-21T12:27:09Z" finished-at="2019-02-21T12:27:26Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="17647" started-at="2019-02-21T12:27:09Z" finished-at="2019-02-21T12:27:26Z">
+      <class name="tests.TestAbout">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.TestAbout@53b32d7]" name="beforeTest" is-config="true" duration-ms="10947" started-at="2019-02-21T17:27:09Z" finished-at="2019-02-21T17:27:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="About()[pri:1, instance:tests.TestAbout@53b32d7]" name="About" duration-ms="557" started-at="2019-02-21T17:27:20Z" finished-at="2019-02-21T17:27:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- About -->
+        <test-method status="PASS" signature="Student()[pri:2, instance:tests.TestAbout@53b32d7]" name="Student" duration-ms="2234" started-at="2019-02-21T17:27:20Z" finished-at="2019-02-21T17:27:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Student -->
+        <test-method status="PASS" signature="Instructor()[pri:4, instance:tests.TestAbout@53b32d7]" name="Instructor" duration-ms="1612" started-at="2019-02-21T17:27:22Z" finished-at="2019-02-21T17:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Instructor -->
+        <test-method status="PASS" signature="Department()[pri:5, instance:tests.TestAbout@53b32d7]" name="Department" duration-ms="1684" started-at="2019-02-21T17:27:24Z" finished-at="2019-02-21T17:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Department -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.TestAbout@53b32d7]" name="afterTest" is-config="true" duration-ms="600" started-at="2019-02-21T17:27:26Z" finished-at="2019-02-21T17:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.TestAbout -->
+    </test> <!-- Command line test -->
+  </suite> <!-- tests.TestAbout -->
+</testng-results>
